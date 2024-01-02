@@ -1,0 +1,108 @@
+
+  </div>
+	  			      </div>
+	  			   <div>
+	  			</div>
+	  		</div>
+	  	</div>
+	</div>
+</body>
+</html> 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Moviekh.net</title>
+    
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css">
+	
+  </head>
+
+  <body>
+	
+    <div class="container" style="margin: 60px auto">
+      <div class="row">
+        <div class="col-md-12">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+				  <h3 class="panel-title">Moviekh.net Free embed video. You can upload video in archive.org & nimo.tv</h3>
+				</div>
+				<div class="panel-body">
+				    					<form method="post" class="form-horizontal">
+						<div class="page-header">
+<center><a href="><img src="" alt="youtube_certified" border="0"></a></center></br></br></br>
+						</div>
+						<div class="form-group">
+							<label for="360p" class="col-md-3 control-label">Support link</label>
+							<div class="col-md-6">
+								<input type="url" class="form-control" placeholder="https://link (.360p.mp4)" id="360p" name="360p" value="">
+								<input type="url" class="form-control" placeholder="https://link (.720p.mp4)" id="720p" name="720p" value="">
+								<input type="url" class="form-control" placeholder="https://link (.1080p.mp4, .m3u8.auto)" id="1080p" name="1080p" value="">
+							</div>
+						</div>
+						
+												<div class="subtitle">
+							<div class="form-group">
+								<label for="subtitle" class="col-md-3 control-label">Subtitle</label>
+								<div class="col-md-4">
+									<input type="url" class="form-control" placeholder="https://link (.srt, .vtt)" name="subtitle[]">
+								</div>
+								<div class="col-md-2">
+									<input type="text" class="form-control" placeholder="subtitle language" name="subtitle-label[]">
+								</div>
+								<div class="col-md-1">
+									<button class="btn btn-sm btn-info add-subtitle" type="button">+</button>
+								</div>
+							</div>							
+						</div>
+												
+						<div class="form-group">
+							<div class="col-md-6 col-md-offset-3">
+								<button type="submit" class="btn btn-primary" id="btn-create">Generate </button>
+							</div>
+						</div>
+					</form>
+					
+					<center><button class="k2-button">ទំនាក់ទំនង</button><a href="https://t.me/mr_ron168" target=""><button class="k2-button">👉👉 Admin</button></a></center> <h2></h2> <center><button class="k2-button">អ្នកដែរប្រើទាំងអស់សូមចុចចូលគ្រប់ដើម្បីយល់ដឹងពីរកាប្រើប្រាស</button><a href="https://t.me/+D1WMm9BbjjNhMzY9" target=""><button class="k2-button">👉👉 Group</button></a></center>
+                
+									</div>
+			</div>
+		</div>
+      </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<script>
+		$(function() {
+		    var c = 1;
+			$(document).on('click', '.add-subtitle', function() {
+			    if (c < 30)
+			    {
+    				var subtitle = $(this).closest('.subtitle');
+    				
+    				var clone = subtitle.clone();
+    				
+    				clone.find('button.add-subtitle').removeClass('add-subtitle btn-info').addClass('remove-subtitle btn-danger').text('x');
+    				
+    				subtitle.after(clone);
+    				c++;
+			    }
+			});
+			
+			$(document).on('click', '.remove-subtitle', function() {
+				$(this).closest('.subtitle').remove();
+				c--;
+			});
+		});
+	</script>
+  </body>
+  	</html>
